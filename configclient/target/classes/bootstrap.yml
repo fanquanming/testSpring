@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      name: config-dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#暴露监控的端点
+
+
+
+#spring:
+#  cloud:
+#    config:
+#      name: configclient
+#      label: master
+#      discovery:
+#        enable: true
+#        service-id: configserver
+#eureka:
+#  client:
+#    service-url:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#      defaultZone: http://localhost:8761/eureka/

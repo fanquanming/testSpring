@@ -1,0 +1,21 @@
+server:
+  port: 8881
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fanquanming/aispringcloud.git
+          searchPaths: config
+          username: fanquanming
+          password: f2535314152
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
