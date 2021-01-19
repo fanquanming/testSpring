@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class test {
     @GetMapping("purchase/test")
     public String testJenkinsWithSpringboot() {
-        return "jenkins with springboot1工作空间的";
+        return "jenkins with springboot1我菜哥牛逼";
     }
 }
